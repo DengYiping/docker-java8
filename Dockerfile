@@ -1,5 +1,7 @@
 FROM ubuntu:14.04
 
+RUN apt-get update
+RUN apt-get upgrade -y
 # Install system level packages needed to install elastic search or dependancies.
 RUN apt-get -y install software-properties-common
 
